@@ -10,10 +10,12 @@ function turnOnEvent() {
     header.forEach(element => {
         element.style.color = "black";
     });
-    const icon = document.getElementsByTagName("i");
-    icon.forEach(element => {
-        element.style.color = "#ffeb3b";
-    });
+    let input = document.getElementsByTagName("input")[0].value;
+    if (!input) {
+        input = "#ffeb3b";
+    }
+    const icon = document.getElementsByTagName("i")[0];
+    icon.style.color = input;
     const body = document.getElementsByTagName("body");
     body.forEach(element => {
         element.style.backgroundColor = "white";
