@@ -3,7 +3,7 @@ import '../styles/index.scss';
 console.log('webpack starterkit');
 
 function turnOnEvent() {
-    const element = document.getElementById("lightBulbStatus");
+    const element = document.getElementsByTagName("b")[0];
     element.innerHTML = "ON";
     element.style.color = "black";
     const header = document.getElementsByTagName("h1");
@@ -21,7 +21,7 @@ function turnOnEvent() {
 }
 
 function turnOffEvent() {
-    const element = document.getElementById("lightBulbStatus");
+    const element = document.getElementsByTagName("b")[0];
     element.innerHTML = "OFF";
     element.style.color = "white";
     const header = document.getElementsByTagName("h1");
